@@ -4,6 +4,7 @@
 
 // Extract the required classes from the discord.js module
 const { Client, MessageEmbed } = require('discord.js');
+bot.user.setActivity('🚚 Vendor Nederland Truckers', { type: 'PLAYING'}).catch(console.error);
 
 const TOKEN = process.env.arcadia
 
