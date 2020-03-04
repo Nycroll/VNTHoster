@@ -16,6 +16,7 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
+  bot.user.setGame("🚚 Vendor Nederland Truckers");
 });
 
 client.on('message', message => {
