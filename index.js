@@ -16,7 +16,6 @@ const client = new Client();
  */
 client.on('ready', () => {
   console.log('I am ready!');
-  bot.user.setPresence({ status: 'online', game: { name: '🚚 Vendor Nederland Truckers' } });
 
 });
 
