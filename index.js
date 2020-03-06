@@ -102,7 +102,7 @@ client.on('message', message => {
         // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
         const embed = new MessageEmbed()
           // Set the title of the field
-          .setTitle('Wie zijn')
+          .setTitle('Wie zijn wij')
           // Set the color of the embed
           .setColor(0xff0000)
           // Set the main content of the embed
