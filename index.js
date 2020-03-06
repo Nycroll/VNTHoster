@@ -154,5 +154,25 @@ client.on('message', message => {
 });
   
 
+client.on('message', message => {
+  // If the message is "how to embed"
+  if (message.content === 'vr1') {
+    // We can create embeds using the MessageEmbed constructor
+    // Read more about all that you can do with the constructor
+    // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+    const embed = new MessageEmbed()
+      // Set the title of the field
+      .setTitle('Officiele Vendor Nederland Regels')
+      // Set the color of the embed
+      .setColor(0xff0000)
+      // Set the main content of the embed
+      .setDescription('Respect voor de andere leden, met inbegrip van het personeel.\n Geen misbruik naar andere spelers.\n Als je verbannen wordt uit Multiplayer, moet je dit melden aan een lid van het Vendor Nederland management.\n Je truck moet voldoen aan de truck specificaties en de skin. Deze gegevens zijn te vinden op het #vtc-skin kanaal (discord).\n Je moet in het bestuurders stem kanaal zijn wanneer je in het spel bent met andere Vendor Nederland leden.\n Je moet je aanmelden voor Leave als je een tijdje niet kunt spelen. Vergeet niet dat verlof niet langer dan een maand kan worden bestraft. Als je dit niet doet, zal je worden verplaatst naar inactief en uit de VTC worden geschopt.\n Je moet minsten in 1 week meer dan 10.000 Dollar maken, gebeurt dat niet gaat je niveau lager en lager. Dat houdt in als het een gewoonte word kun je eruit gekickt worden.\n We volgen het 4-stakingssysteem. 1 waarschuwing, 2 waarschuwing, 3 waarschuwing en soft ban of kick en 4 permanente ban (4 Strike System is afhankelijk van het gedrag van de persoon. Het management heeft het recht wat te doen. bijvoorbeeld: men kan permanent gebanned worden als het geweld hoog is).');
+    // Send the embed to the same channel as the message
+    message.channel.send(embed);
+
+  }
+  
+});
+
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
 client.login(process.env.TOKEN);
