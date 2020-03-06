@@ -75,7 +75,7 @@ client.on('message', message => {
     }
 });
 
- client.on('message', message => {
+client.on('message', message => {
     // If the message is "how to embed"
     if (message.content === 'em1') {
         // We can create embeds using the MessageEmbed constructor
@@ -92,6 +92,65 @@ client.on('message', message => {
         message.channel.send(embed);
     }
 
+});
+
+        client.on('message', message => {
+      // If the message is "how to embed"
+      if (message.content === 'w1') {
+        // We can create embeds using the MessageEmbed constructor
+        // Read more about all that you can do with the constructor
+        // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+        const embed = new MessageEmbed()
+          // Set the title of the field
+          .setTitle('Wie zijn')
+          // Set the color of the embed
+          .setColor(0xff0000)
+          // Set the main content of the embed
+          .setDescription('Vendor Nederland is als geen andere een ETS2- truckbedrijf. Wij zijn een gemeenschap die de manier waarop virtuele trucking vandaag de dag is, aan het veranderen is. Wij zoeken truckers over heel Nederland en België die zich inzetten om hun tijd in ons bedrijf neer te zetten. Onze missie is om een plek te crieëren waar truckers op ETS2 samen kunnen komen om een vriendelijke gemeenschap te vormen. Onze chauffeurs zullen altijd op de eerste plaats komen en om dat te doen, moeten we zorgen voor verantwoordelijkheid, respect, vertrouwen en initiatief naar alle leden toe. Lees hieronder meer over ons.');
+        // Send the embed to the same channel as the message
+        message.channel.send(embed);
+      } 
+
+  });
+
+      client.on('message', message => {
+        // If the message is "how to embed"
+        if (message.content === 'w1') {
+          // We can create embeds using the MessageEmbed constructor
+          // Read more about all that you can do with the constructor
+          // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+          const embed = new MessageEmbed()
+            // Set the title of the field
+            .setTitle('Word Lid van ons')
+            // Set the color of the embed
+            .setColor(0xff0000)
+            // Set the main content of the embed
+            .setDescription('Wil jij ons community helpen met het groeien van kilometers? Dat kan altijd, je kunt solliciteren via de link hier onder. Wij waarderen de hulp van jullie. Hoe meer personeel wij hebben hoe groter onze community word.');
+          // Send the embed to the same channel as the message
+          message.channel.send(embed);
+
+        }
+
+      });
+
+      client.on('message', message => {
+        // If the message is "how to embed"
+        if (message.content === 'w1') {
+          // We can create embeds using the MessageEmbed constructor
+          // Read more about all that you can do with the constructor
+          // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+          const embed = new MessageEmbed()
+            // Set the title of the field
+            .setTitle('Onze Missie')
+            // Set the color of the embed
+            .setColor(0xff0000)
+            // Set the main content of the embed
+            .setDescription('Onze missie is om: Verander de manier waarop virtuele trucking vandaag de dag is door de kracht van technologie en creatief denken. Wij zoeken truckers over heel Nederland en België die zich inzetten om hun tijd in ons bedrijf neer te zetten. Het is onze missie om de grenzen te verleggen en het beste te bieden voor het plezier van onze chauffaurs.');
+          // Send the embed to the same channel as the message
+          message.channel.send(embed);
+
+        }
+        
 });
   
 
