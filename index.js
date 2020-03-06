@@ -125,7 +125,7 @@ client.on('message', message => {
             // Set the color of the embed
             .setColor(0xff0000)
             // Set the main content of the embed
-            .setDescription('Wil jij ons community helpen met het groeien van kilometers? Dat kan altijd, je kunt solliciteren via de link hier onder. Wij waarderen de hulp van jullie. Hoe meer personeel wij hebben hoe groter onze community word.');
+            .setDescription('Wil jij ons community helpen met het groeien van kilometers? Dat kan altijd, je kunt solliciteren via de link hier onder. Wij waarderen de hulp van jullie. Hoe meer personeel wij hebben hoe groter onze community word.\n\n https://forms.gle/yH8u4esT2j86bJdC8');
           // Send the embed to the same channel as the message
           message.channel.send(embed);
 
