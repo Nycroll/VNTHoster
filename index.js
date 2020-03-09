@@ -174,5 +174,25 @@ client.on('message', message => {
   
 });
 
+  client.on('message', message => {
+  // If the message is "how to embed"
+  if (message.content === 's1') {
+    // We can create embeds using the MessageEmbed constructor
+    // Read more about all that you can do with the constructor
+    // over at https://discord.js.org/#/docs/main/master/class/MessageEmbed
+    const embed = new MessageEmbed()
+      // Set the title of the field
+      .setTitle('Solliciteer en join onze team')
+      // Set the color of the embed
+      .setColor(0xff0000)
+      // Set the main content of the embed
+      .setDescription('Wil jij ons community helpen met het groeien van kilometers? Dat kan altijd, je kunt solliciteren via de link hier onder. Wij waarderen de hulp van jullie. Hoe meer personeel wij hebben hoe groter onze community word.\n\n https://forms.gle/yH8u4esT2j86bJdC8');
+    // Send the embed to the same channel as the message
+    message.channel.send(embed);
+
+  }
+  
+});
+
 // Log our bot in using the token from https://discordapp.com/developers/applications/me
 client.login(process.env.TOKEN);
